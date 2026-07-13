@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": true,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  "js/ts.preferences.autoImportFileExcludePatterns": [
+    "**/_*.ts",
+    "**/*.stories.tsx",
+    "**/*.test.tsx",
+    "**/*.spec.tsx"
+  ],
+
+  "js/ts.tsdk.path": "node_modules/typescript/lib"
+}
