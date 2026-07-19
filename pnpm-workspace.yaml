@@ -7,6 +7,8 @@ allowBuilds:
   esbuild: true
   # Next.js 이미지 최적화에 필요한 네이티브 바이너리를 설치한다.
   sharp: true
+  # 개발·테스트용 Mock Service Worker 파일을 준비한다.
+  msw: true
 
 catalog:
   "@nestjs/common": ^11.1.6

@@ -1,0 +1,51 @@
+{
+  "name": "@repo/tanstack-router",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "dev": "vite",
+    "lint": "oxlint .",
+    "lint:fix": "oxlint --fix .",
+    "check-types": "tsc -b",
+    "test": "vitest run",
+    "test:ci": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "msw:init": "msw init public --save",
+    "clean": "rm -rf dist node_modules/.vite test-results playwright-report tsconfig.tsbuildinfo"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.4.0",
+    "@repo/ui": "workspace:*",
+    "@tanstack/react-query": "^5.101.2",
+    "@tanstack/react-router": "^1.139.1",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-hook-form": "^7.81.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@repo/config-typescript": "workspace:*",
+    "@tailwindcss/vite": "^4.3.3",
+    "@tanstack/router-plugin": "^1.139.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@vitejs/plugin-react": "catalog:",
+    "@vitest/coverage-v8": "^4.0.18",
+    "jsdom": "^26.1.0",
+    "msw": "^2.12.0",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vitest": "^4.0.18"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  }
+}
